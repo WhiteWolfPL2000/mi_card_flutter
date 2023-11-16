@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 foregroundImage: AssetImage('images/programmer.png'),
@@ -41,58 +42,51 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 4,
                 ),
               ),
-              Container(
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(color: Colors.teal[100],),
+              ),
+              Card(
                 margin: EdgeInsets.symmetric(
                   horizontal: 25,
                   vertical: 10,
                 ),
-                padding: EdgeInsets.all(10),
                 color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+48 123 123 123',
+                    style: TextStyle(
                       color: Colors.teal,
+                      fontFamily: 'SourceSans3',
+                      fontSize: 20,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '+48 123 123 123',
-                      style: TextStyle(
-                        color: Colors.teal,
-                        fontFamily: 'SoursSans3',
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(
                   horizontal: 25,
                   vertical: 10,
                 ),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'mail@mail.coms',
+                    style: TextStyle(
                       color: Colors.teal,
+                      fontFamily: 'SorceSans3',
+                      fontSize: 20,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'mail@mail.com',
-                      style: TextStyle(
-                        color: Colors.teal,
-                        fontFamily: 'SoursSans3',
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
