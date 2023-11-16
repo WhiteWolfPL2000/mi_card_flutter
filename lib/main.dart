@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blueAccent,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'SourceSans3',
                   fontWeight: FontWeight.bold,
-                  color: Colors.teal[100],
+                  color: Colors.blueAccent[100],
                   fontSize: 20,
                   letterSpacing: 4,
                 ),
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
               SizedBox(
                 height: 20,
                 width: 150,
-                child: Divider(color: Colors.teal[100],),
+                child: Divider(color: Colors.blueAccent[100],),
               ),
               Card(
                 margin: EdgeInsets.symmetric(
@@ -56,12 +56,12 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
-                    color: Colors.teal,
+                    color: Colors.blueAccent,
                   ),
                   title: Text(
                     '+48 123 123 123',
                     style: TextStyle(
-                      color: Colors.teal,
+                      color: Colors.blueAccent,
                       fontFamily: 'SourceSans3',
                       fontSize: 20,
                     ),
@@ -77,12 +77,12 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
-                    color: Colors.teal,
+                    color: Colors.blueAccent,
                   ),
                   title: Text(
                     'mail@mail.coms',
                     style: TextStyle(
-                      color: Colors.teal,
+                      color: Colors.blueAccent,
                       fontFamily: 'SorceSans3',
                       fontSize: 20,
                     ),
